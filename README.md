@@ -25,11 +25,9 @@ Ensuite, on utilise *LabelEncoder* sur les *y*.
 Après cela, grâce à *Keras*, on fait de la data augmentation pour élargir notre dataset en réutilisant les données déjà existantes et en les déformant.   
 Ensuite, il y a le développement de l'architecture du modèle VGG16. 
 Le développement de cette architecture se termine par la compilation du modèle et la visualisation de *l'accuracy*, de la *val-accuracy* et de la *loss* du modèle au cours de différentes *epochs*.  
-Après cela, il y a une visualisation graphique de *l'accuracy* du modèle ainsi que la mise en place d'une matrice de confusion.  
-![graph](/pj_readme/graph_acc.png)  ![mat](pj_readme/matrice_confusion.png)  
+![epochs](/pj_readme/epoch.png)
+Après cela, il y a une visualisation graphique de *l'accuracy* du modèle ainsi que la mise en place d'une matrice de confusion.    
+![graph](/pj_readme/visualisation_graphique.png)  ![mat](pj_readme/matrice_confusion.png)  
 Pour enregistrer ce modèle de CNN on utilise la fonction `model.save` de TensorFlow. Ici le modèle est enregistré sous le nom `modelmask`.  
-Enfin, on teste notre modèle à partir d'une image qui n'est pas dans le dataset :
-
-![reco2()](/pj_readme/reco2.png) 
-
-
+Enfin, on teste notre modèle à partir d'une image qui n'est pas dans le dataset :    
+![prediction](/pj_readme/prediction.png) 
